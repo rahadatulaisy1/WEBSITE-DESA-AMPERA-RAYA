@@ -1,0 +1,91 @@
+/* Font & Umum */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e1b739; /* Tailwind green-700 */
+  color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu Desktop */
+.menu-desktop {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-desktop a,
+.menu-desktop button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.2s;
+}
+
+.menu-desktop a:hover,
+.menu-desktop button:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 12rem;
+  z-index: 50;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+/* Mobile menu */
+.mobile-menu a {
+  display: block;
+  background-color: #e1b739; /* Tailwind green-800 */
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.mobile-menu a:hover {
+  background-color: #b82121; /* Tailwind green-700 */
+}

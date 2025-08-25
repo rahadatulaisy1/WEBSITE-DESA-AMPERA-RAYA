@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita Desa Ampera Raya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/web desa ampera raya/img/favicon.ico" type="image/x-icon" />
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-white shadow fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="img/logo.png" alt="Logo" class="w-16 h-16" />
+      <div>
+        <p class="font-extrabold text-xl text-blue-900">
+          DESA AMPERA <span class="text-yellow-500">RAYA</span>
+        </p>
+        <p class="text-base text-gray-600">Kabupaten Kubu Raya</p>
+      </div>
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex space-x-10 font-semibold text-lg text-gray-700">
+      <a href="index.html">Beranda</a>
+      <a href="profile.html">Profil Desa</a>
+      <a href="infografis.html">Infografis</a>
+      <a href="berita.html" class="border-b-2 border-yellow-500 pb-1">Berita</a>
+      <a href="galeri.html">Galeri Desa</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Sidebar Menu -->
+<div id="menu"
+  class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+  <div class="p-5 space-y-5 font-semibold text-lg text-gray-700">
+    <!-- Header Sidebar -->
+    <div class="flex items-center justify-between border-b pb-3">
+      <div class="flex items-center space-x-2">
+        <button id="close-menu" class="focus:outline-none text-gray-600 hover:text-gray-900">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <span class="text-xl font-bold text-blue-900">Menu</span>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <a href="index.html" class="block">Beranda</a>
+    <a href="profile.html" class="block">Profil Desa</a>
+    <a href="infografis.html" class="block">Infografis</a>
+    <a href="berita.html" class="block border-b-2 border-yellow-500 pb-1">Berita</a>
+    <a href="galeri.html" class="block">Galeri Desa</a>
+  </div>
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeMenu = document.getElementById("close-menu");
+  const menu = document.getElementById("menu");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.remove("translate-x-full");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+<!-- Konten Berita -->
+<section class="max-w-7xl mx-auto px-4 pt-28 pb-16">
+  <h2 class="text-4xl font-bold text-blue-900 mb-2">BERITA DESA</h2>
+  <p class="text-black mb-8">
+    Menyajikan informasi terbaru tentang peristiwa, kegiatan, dan perkembangan di Desa Ampera Raya
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+    <!-- Berita 1 -->
+    <a href="https://pontianakpost.jawapos.com/kubu-raya/1464163989/muda-tinjau-pelaksanaan-pemungutan-suara-di-desa-ampera-raya-warga-antusias-berikan-hak-suara" 
+      target="_blank" 
+      class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+      <img src="/web desa ampera raya/img/berita1" 
+          alt="Tinjau Pemungutan Suara" 
+          class="w-full h-48 object-cover">
+      <div class="p-4 relative">
+        <h3 class="font-bold text-lg mb-2">Muda Tinjau Pemungutan Suara di Desa Ampera Raya</h3>
+        <p class="text-gray-600 text-sm mb-10">
+          Bupati Kubu Raya meninjau pelaksanaan Pemilu di TPS 018 SBR dengan kondisi tertib dan antusiasme warga tinggi ...
+        </p>
+        <div class="absolute bottom-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-xs font-bold">
+          15 Feb 2024
+        </div>
+      </div>
+    </a>
+
+    <!-- Berita 2 -->
+    <a href="https://beritairn.com/desa-ampera-raya-layak-dapat-nomor-desa" 
+      target="_blank" 
+      class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+      <img src="/web desa ampera raya/img/berita2" 
+          alt="Layak Nomor Desa" 
+          class="w-full h-48 object-cover">
+      <div class="p-4 relative">
+        <h3 class="font-bold text-lg mb-2">Desa Ampera Raya Layak Mendapat Nomor Desa</h3>
+        <p class="text-gray-600 text-sm mb-10">
+          Tim Kemendagri melakukan verifikasi lapangan: Desa Ampera Raya siap menerima kode desa dan dukungan administrasi ...
+        </p>
+        <div class="absolute bottom-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-xs font-bold">
+          10 Feb 2022
+        </div>
+      </div>
+    </a>
+
+    <!-- Berita 3 -->
+    <a href="https://www.suarakalbar.co.id/2023/04/satu-rumah-di-ampera-raya-terbakar-minim-sumber-air-jadi-kendala" 
+      target="_blank" 
+      class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+      <img src="/web desa ampera raya/img/berita3.jpg" 
+          alt="Rumah Terbakar" 
+          class="w-full h-48 object-cover">
+      <div class="p-4 relative">
+        <h3 class="font-bold text-lg mb-2">Satu Rumah di Ampera Raya Terbakar, Minim Sumber Air Jadi Kendala</h3>
+        <p class="text-gray-600 text-sm mb-10">
+          Kebakaran terjadi menjelang sahur: petugas pemadam menghadapi keterbatasan air di lokasi dan kendala akses perumahan ...
+        </p>
+        <div class="absolute bottom-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-xs font-bold">
+          9 Apr 2023
+        </div>
+      </div>
+    </a>
+
+  <!-- Berita 4 -->
+<a href="https://mediakalbarnews.com/147-anggota-kpps-se-desa-ampera-raya-ikut-bimtek-jelang-pemilu-2024/" 
+  target="_blank" 
+  class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+  <img src="/web desa ampera raya/img/berita4" 
+      alt="Bimtek KPPS Desa Ampera Raya" 
+      class="w-full h-48 object-cover">
+  <div class="p-4 relative">
+    <h3 class="font-bold text-lg mb-2">147 Anggota KPPS Desa Ampera Raya Ikuti Bimtek Jelang Pemilu 2024</h3>
+    <p class="text-gray-600 text-sm mb-10">
+      Menjelang Pemilu 2024, ratusan anggota KPPS Desa Ampera Raya mengikuti bimbingan teknis untuk meningkatkan pemahaman dan kesiapan pelaksanaan pemungutan suara ...
+    </p>
+    <div class="absolute bottom-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-xs font-bold">
+      18 Jan 2024
+    </div>
+  </div>
+</a>
+
+<!-- Berita 5 -->
+<a href="https://mediakalbarnews.com/kunjungan-kpud-kubu-raya-ke-desa-ampera-raya-jajaki-akurasi-data-pemilih-perumnas-iv/" 
+  target="_blank" 
+  class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+  <img src="/web desa ampera raya/img/berita5" 
+      alt="Kunjungan KPUD ke Desa Ampera Raya" 
+      class="w-full h-48 object-cover">
+  <div class="p-4 relative">
+    <h3 class="font-bold text-lg mb-2">KPUD Kubu Raya Kunjungi Desa Ampera Raya, Bahas Akurasi Data Pemilih</h3>
+    <p class="text-gray-600 text-sm mb-10">
+      Komisi Pemilihan Umum Daerah (KPUD) Kubu Raya melakukan kunjungan ke Desa Ampera Raya guna memastikan keakuratan data pemilih khususnya di wilayah Perumnas IV ...
+    </p>
+    <div class="absolute bottom-4 right-4 bg-blue-900 text-white px-3 py-1 rounded text-xs font-bold">
+      3 Jan 2024
+    </div>
+  </div>
+</a>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+    
+    <!-- Kolom Logo + Alamat -->
+    <div class="flex items-start space-x-3">
+      <img src="img/logo.png" alt="Logo" class="w-28 h-28" />
+      <div class="space-y-2">
+        <p class="font-bold text-lg">DESA AMPERA RAYA</p>
+        <p>
+          Jalan Ampera Raya 
+          <br>Desa Ampera Raya, Kec. Sungai Ambawang, Kabupaten Kubu Raya
+          <br>Provinsi Kalimantan Barat, 78393
+        </p>
+      </div>
+    </div>
+
+    <!-- Kolom Kontak -->
+    <div class="space-y-2">
+      <p class="font-bold">HUBUNGI KAMI</p>
+      
+      <!-- Pesan / Email -->
+      <p class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+        <span>DesaAmperaRaya@gmail.com</span>
+      </p>
+      
+      <!-- Telepon -->
+      <p class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.518 4.55a1 1 0 01-.272 1.05l-1.805 1.805a16.018 16.018 0 006.364 6.364l1.805-1.805a1 1 0 011.05-.272l4.55 1.518a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
+        </svg>
+        <span>08000000000</span>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+  // Toggle menu
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

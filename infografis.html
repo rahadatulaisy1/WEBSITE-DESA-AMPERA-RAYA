@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infografis Desa Ampera Raya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/web desa ampera raya/img/favicon.ico" type="image/x-icon" />
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-white shadow fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="img/logo.png" alt="Logo" class="w-16 h-16" />
+      <div>
+        <p class="font-extrabold text-xl text-blue-900">
+          DESA AMPERA <span class="text-yellow-500">RAYA</span>
+        </p>
+        <p class="text-base text-gray-600">Kabupaten Kubu Raya</p>
+      </div>
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex space-x-10 font-semibold text-lg text-gray-700">
+      <a href="index.html" class="block">Beranda</a>
+      <a href="profile.html">Profil Desa</a>
+      <a href="infografis.html" class="border-b-2 border-yellow-500 pb-1">Infografis</a>
+      <a href="berita.html">Berita</a>
+      <a href="galeri.html">Galeri Desa</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Sidebar Menu -->
+<div id="menu"
+  class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+  <div class="p-5 space-y-5 font-semibold text-lg text-gray-700">
+    <!-- Header Sidebar -->
+    <div class="flex items-center justify-between border-b pb-3">
+      <div class="flex items-center space-x-2">
+        <button id="close-menu" class="focus:outline-none text-gray-600 hover:text-gray-900">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <span class="text-xl font-bold text-blue-900">Menu</span>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <a href="index.html" class="block">Beranda</a>
+    <a href="profile.html" class="block">Profil Desa</a>
+    <a href="infografis.html" class="block border-b-2 border-yellow-500 pb-1">Infografis</a>
+    <a href="berita.html" class="block">Berita</a>
+    <a href="galeri.html" class="block">Galeri Desa</a>
+  </div>
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeMenu = document.getElementById("close-menu");
+  const menu = document.getElementById("menu");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.remove("translate-x-full");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+<section class="max-w-7xl mx-auto px-6 pt-28 pb-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Teks Kiri -->
+    <div>
+      <h2 class="text-4xl font-extrabold text-blue-900 mb-6">
+        DEMOGRAFI PENDUDUK
+      </h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Memberikan informasi lengkap mengenai karakteristik demografi penduduk suatu wilayah. 
+        Mulai dari jumlah penduduk, usia, jenis kelamin, tingkat pendidikan, pekerjaan, agama, 
+        dan aspek penting lainnya yang menggambarkan komposisi populasi secara rinci.
+      </p>
+    </div>
+
+    <!-- Foto Kanan -->
+    <div class="flex justify-center">
+      <img src="/web desa ampera raya/img/logo.png" alt="Foto Demografi" 
+           class="w-80 h-96 object-cover rounded-xl">
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 pt-5 pb-16">
+  <!-- Judul -->
+  <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 text-center">
+    JUMLAH PENDUDUK
+  </h2>
+
+  <!-- Grid Card -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    <!-- Total Penduduk (Full Lebar) -->
+    <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4 justify-center md:col-span-2">
+      <img src="/web desa ampera raya/img/icon_jumlahpenduduk.png" alt="Total Penduduk" class="w-16 h-16">
+      <div class="text-center">
+        <h3 class="text-gray-700 font-semibold uppercase text-sm">TOTAL PENDUDUK</h3>
+        <p class="text-2xl font-bold text-red-600">5.206 <span class="text-gray-700 text-lg font-normal">Jiwa</span></p>
+      </div>
+    </div>
+
+    <!-- Perempuan -->
+    <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4">
+      <img src="/web desa ampera raya/img/girl.png" alt="Perempuan" class="w-16 h-16">
+      <div>
+        <h3 class="text-gray-700 font-semibold uppercase text-sm">PEREMPUAN</h3>
+        <p class="text-2xl font-bold text-red-600">2.647 <span class="text-gray-700 text-lg font-normal">Jiwa</span></p>
+      </div>
+    </div>
+
+    <!-- Laki-laki -->
+    <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4">
+      <img src="/web desa ampera raya/img/boy.png" alt="Laki-Laki" class="w-16 h-16">
+      <div>
+        <h3 class="text-gray-700 font-semibold uppercase text-sm">LAKI-LAKI</h3>
+        <p class="text-2xl font-bold text-red-600">2.559 <span class="text-gray-700 text-lg font-normal">Jiwa</span></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 pt-10 pb-16">
+  <!-- Judul -->
+  <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
+    Berdasarkan Dusun
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Chart -->
+    <div class="flex justify-center">
+      <canvas id="dusunChart" class="w-64 h-64"></canvas>
+    </div>
+
+    <!-- Keterangan -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Keterangan:</h3>
+      <ul class="space-y-2 text-lg text-black">
+        <li><span class="font-semibold">Dusun Ampera:</span> 2.000 Jiwa</li>
+        <li><span class="font-semibold">Dusun Perumnas IV:</span> 1.500 Jiwa</li>
+        <li><span class="font-semibold">Dusun Anom:</span> 1.706 Jiwa</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Tambahkan Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('dusunChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Dusun Ampera', 'Dusun Perumnas IV', 'Dusun Anom'],
+      datasets: [{
+        data: [2000, 1500, 1706],
+        backgroundColor: ['#3b82f6', '#10b981', '#f59e0b'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false, // biar ikut ukuran canvas
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+</script>
+
+
+<section class="max-w-7xl mx-auto px-6 pt-10 pb-16">
+  <!-- Judul -->
+  <h2 class="text-4xl md:text-4xl font-bold text-blue-900 mb-10">
+    Berdasarkan Agama
+  </h2>
+
+  <!-- Grid Card -->
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Islam -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/islam.png" alt="Islam" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Islam</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Kristen -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/kristen.png" alt="Kristen" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Kristen</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Katolik -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/katolik.png" alt="Katolik" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Katolik</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Hindu -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/hindu.png" alt="Hindu" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Hindu</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Buddha -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/budha.png" alt="Buddha" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Buddha</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Konghucu -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/konghucu.png" alt="Konghucu" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Konghucu</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Kepercayaan Lainnya -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+      <img src="/web desa ampera raya/img/null.png" alt="Kepercayaan Lainnya" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Kepercayaan Lainnya</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 pt-10 pb-16">
+  <!-- Judul -->
+  <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
+    Berdasarkan Suku
+  </h2>
+
+  <!-- Grid Card -->
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Suku Melayu -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/melayu.jpg" alt="Suku Melayu" class="w-20 h-20 mb-4">
+      <h3 class="text-lg font-semibold">Melayu</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Jawa -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/jawa.jpg" alt="Suku Jawa" class="w-20 h-20 mb-4">
+      <h3 class="text-lg font-semibold">Jawa</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Batak -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/batak.jpg" alt="Suku Batak" class="w-20 h-20 mb-4">
+      <h3 class="text-lg font-semibold">Batak</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Minang -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/dayak.jpg" alt="Suku Dayak" class="w-20 h-20 mb-4">
+      <h3 class="text-lg font-semibold">Dayak</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Bugis -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/bugis.jpg" alt="Suku Bugis" class="w-20 h-20 mb-4">
+      <h3 class="text-lg font-semibold">Bugis</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Banjar -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/madura.jpg" alt="Suku Madura" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Madura</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+    <!-- Suku Lainnya -->
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="/web desa ampera raya/img/null.png" alt="Suku Lainnya" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold">Lainnya</h3>
+      <p class="text-2xl font-bold text-red-600">0</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+    
+    <!-- Kolom Logo + Alamat -->
+    <div class="flex items-start space-x-3">
+      <img src="img/logo.png" alt="Logo" class="w-28 h-28" />
+      <div class="space-y-2">
+        <p class="font-bold text-lg">DESA AMPERA RAYA</p>
+        <p>
+          Jalan Ampera Raya 
+          <br>Desa Ampera Raya, Kec. Sungai Ambawang, Kabupaten Kubu Raya
+          <br>Provinsi Kalimantan Barat, 78393
+        </p>
+      </div>
+    </div>
+
+    <!-- Kolom Kontak -->
+    <div class="space-y-2">
+      <p class="font-bold">HUBUNGI KAMI</p>
+      
+      <!-- Pesan / Email -->
+      <p class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+        <span>DesaAmperaRaya@gmail.com</span>
+      </p>
+      
+      <!-- Telepon -->
+      <p class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.518 4.55a1 1 0 01-.272 1.05l-1.805 1.805a16.018 16.018 0 006.364 6.364l1.805-1.805a1 1 0 011.05-.272l4.55 1.518a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
+        </svg>
+        <span>08000000000</span>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+  // Toggle menu
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
